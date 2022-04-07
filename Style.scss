@@ -1,0 +1,52 @@
+/*Setari implicite fundal si font-style*/
+body {
+    background: rgb(252, 213, 241);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Setare font nume, setari content, borduri*/
+.imgTitle p {
+    font-size: 2em;
+}
+
+.content {
+    display: flex;
+    font-size: 18px;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.imgControl {
+    height: 200px;
+    width: 200px;
+}
+
+div .imgTitle {
+    background: rgb(255, 182, 234);
+}
+
+/*Hover action*/
+.imgTitle:hover {
+    background: lightcoral;
+}
+
+/*Adaptarea la ecran de 900px*/
+@media screen and (max-width: 900px) {
+    .imgControl {
+        height: 100px;
+        width: 100px;
+    }
+    .imgTitle p {
+        font-size: 0.8em;
+    }
+}
+
+/*Adaptarea la ecran de 650px*/
+@media screen and (max-width: 650px) {
+    .content {
+        display: grid;
+    }
+    .imgTitle {
+        display: flex;
+    }
+}
